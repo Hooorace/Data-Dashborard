@@ -1,0 +1,439 @@
+/********** HTML **********/
+body {
+    background-color: rgba(41, 41, 41, 1);
+    display: block;
+}
+
+
+/********** Header **********/
+Header {
+    height: 260px;
+    display: block;
+    border-style: hidden;
+    border-color: green;
+}
+
+#headerBackground {
+    display: block;
+    height: 120px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(20, 20, 20, 0.7);
+    border-style: hidden;
+    border-color: white;
+    line-height: 120px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#logo {
+    display: block;
+    text-align: center;
+    font-family: "Arial Black";
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    border-style: hidden;
+    border-color: red;
+    margin: auto;
+}
+
+.headerMenu {
+    width: 100%;
+    display: block;
+    border-style: hidden;
+    margin: 20px auto 10px auto;
+}
+
+#Menu_dd {
+    font-family: "Arial Black";
+    display: block;
+    height: 35px;
+    border-radius: 15px 15px 15px 15px;
+    vertical-align: middle;
+    line-height: 35px;
+    width: 70%;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 10px auto 10px auto;
+    border-style: hidden;
+}
+
+.menuName {
+    display: inline-block;
+    width: 25%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#company .Select-control, #country .Select-control, #year .Select-control
+{
+    width: 95%;
+    height: 15px;
+    line-height: 15px;
+    vertical-align: middle;
+    border-radius: 30px;
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-style: hidden;
+    border-color: green;
+}
+
+#Menu_rs {
+    font-family: "Arial Black";
+    display: block;
+    height: 30px;
+    border-radius: 15px 15px 15px 15px;
+    vertical-align: middle;
+    line-height: 30px;
+    width: 70%;
+    margin: 20px auto 10px auto;
+    border-style: hidden;
+}
+
+.rc-slider-track {
+    background-color: rgba(114, 0, 9, 0.7);
+    height: 8px;
+}
+
+.rc-slider-dot-active, .rc-slider-handle, .rc-slider-handle:hover
+{
+    border-color: rgba(229, 1, 18, 0.5);
+    border: rgba(229, 1, 18, 0.5);
+}
+
+.rc-slider-mark-text {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#figures {
+    display: block;
+    margin: 0;
+}
+
+/********** Body **********/
+
+H2 {
+    height: 30px;
+    display: block;
+    font-family: "Arial Black";
+    margin: 20px 20px 20px 20px;
+    color: rgba(255, 255, 255, 0.8);
+    border-style: hidden;
+}
+
+
+/***** 1st Layer *****/
+#first_layer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Key Indicators */
+#keyIndicators {
+    width: 48%;
+    display: block;
+    height: 620px;
+    border-style: hidden;
+    border-width: thick;
+    font-family: "Arial Black";
+    border-radius: 30px 30px 30px 30px;
+    margin: 10px auto 10px auto;
+    background-color: rgba(112, 112, 112, 0.4);
+}
+
+#keyIndicatorsFig {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-style: hidden;
+    height: 220px;
+    font-size: 20px;
+}
+
+.tb_keyIndicators {
+    width: 30%;
+    display: inline-block;
+    border-style: hidden;
+    height: 190px;
+    border-radius: 30px 30px 30px 30px;
+    margin: 10px auto 10px auto;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#country {
+    color: rgba(112, 112, 112, 0.4);
+    font-size: 10px;
+    font-family: "Arial Black";
+}
+
+#year {
+    color: rgba(112, 112, 112, 0.4);
+    font-size: 12px;
+    font-family: "Microsoft YaHei UI Black";
+}
+
+#company {
+    color: rgba(112, 112, 112, 0.4);
+    font-size: 12px;
+    font-family: "Microsoft YaHei UI Black";
+}
+
+.kiData {
+    width: 98%;
+    border-width: thin;
+    border-style: hidden;
+    height: 40%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 10px auto 10px auto;
+}
+
+.kiPercent {
+    width: 98%;
+    border-width: thin;
+    border-style: hidden;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px auto 10px auto;
+}
+
+.tdName {
+    font-family: "Arial Black";
+    font-size: 1.2vw;
+    color: rgba(255, 255, 255, 0.7);
+    height: 40%;
+}
+
+#kiVolume, #kiPrice, #kiValue {
+    font-weight: bold;
+    font-size: 1.8vw;
+    color: rgba(255, 255, 255, 1);
+    border-style: hidden;
+    height: 60%;
+}
+
+#tbVolShare, #tbPriceShare, #tbValueShare {
+    width: 60%;
+    border-style: hidden;
+    border-width: thin;
+    margin: 10px auto 10px auto;
+}
+
+#tbVolYoY, #tbPriceYoY, #tbValueYoY {
+    width: 40%;
+    border-style: hidden;
+    border-width: thin;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px auto 10px auto;
+}
+
+.tdPercent {
+    font-weight: bold;
+    font-size: 1.3vw;
+    border-style: hidden;
+    color: rgba(255, 255, 255, 1);
+    height: 60%;
+}
+
+#priceShare {
+    width: 96%;
+    display: block;
+    border-width: thick;
+    border-style: hidden;
+    height: 300px;
+    border-radius: 30px 30px 30px 30px;
+    margin: 10px auto 10px auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#priceShare svg.main-svg {
+    width: 96%;
+    display: block;
+    border-style: hidden;
+    margin: auto 2%;
+}
+
+/* Global Review */
+#globalReview {
+    width: 49%;
+    display: inline-block;
+    border-style: hidden;
+    border-width: thick;
+    height: 620px;
+    vertical-align: top;
+    border-radius: 30px 30px 30px 30px;
+    margin: 10px auto 10px auto;
+    background-color: rgba(112, 112, 112, 0.4);
+}
+
+#cht_globalReview {
+    width: 96%;
+    display: block;
+    border-width: thick;
+    border-style: hidden;
+    margin: auto;
+}
+
+#cht_globalReview g.infolayer {
+    border-radius: 30px 30px 30px 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: thick;
+}
+
+
+/***** 2nd Layer *****/
+#second_layer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto 10px auto;
+}
+
+/* competition Summary - Table */
+#competitionSummary {
+    display: inline-block;
+    border-style: hidden;
+    border-width: thick;
+    border-radius: 30px 30px 30px 30px;
+    width: 98%;
+    background-color: rgba(112, 112, 112, 0.4);
+    height: 1800px;
+    margin: 10px auto 10px auto;
+}
+
+#secondMenu {
+    display: inline-block;
+    width: 15%;
+    height: 35px;
+    vertical-align: middle;
+    line-height: 35px;
+    text-align: center;
+    border-style: hidden;
+    font-family: "Arial Black";
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(112, 112, 112, 0.8);
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 30px 30px 30px 30px;
+    margin: 10px 20px 10px 20px;
+}
+
+#tb_companyRank {
+    width: 97%;
+    display: block;
+    border-width: thick;
+    border-style: hidden;
+    height: 380px;
+    border-radius: 30px 30px 30px 30px;
+    margin: 10px auto 10px auto;
+    padding: 50px 0% 10px 0%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#table {
+    display: flex;
+    justify-content: center;
+    border-style: hidden;
+}
+
+th {
+    border-radius: 30px 30px 30px 30px;
+}
+
+/* competition Summary - Line Chart */
+#companyTrend {
+    width: 99%;
+    height: 570px;
+    border-style: hidden;
+    border-width: thick;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px 30px 30px 30px;
+    margin: 5px auto 5px auto;
+}
+
+.chtTitle {
+    width: 96%;
+    display: block;
+    font-size: 20px;
+    font-family: "Arial Black";
+    color: rgba(255, 255, 255, 0.8);
+    margin: 15px 5% 10px 5%;
+    border-style: hidden;
+    height: 30px;
+}
+
+#AnnualTrend {
+    width: 38%;
+    display: inline-block;
+    border-width: thick;
+    border-style: hidden;
+    height: 550px;
+    border-radius: 30px 30px 30px 30px;
+    margin: 10px auto 10px auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#cht_topFiveAnnualTrend {
+    border-style: hidden;
+    margin: 10px 2% 10px 2%;
+    height: 500px;
+}
+
+#MonthlyTrend {
+    width: 58%;
+    display: inline-block;
+    border-width: thick;
+    border-style: hidden;
+    height: 550px;
+    border-radius: 30px 30px 30px 30px;
+    margin: 10px auto 10px auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#cht_topFiveMonthlyTrend {
+    border-style: hidden;
+    margin: 10px 2% 10px 2%;
+    height: 500px;
+}
+
+/* competition Summary - Positioning Map */
+#cht_companyPositioning {
+    width: 97%;
+    display: block;
+    border-width: thick;
+    border-style: hidden;
+    height: 600px;
+    border-radius: 30px 30px 30px 30px;
+    margin: 10px auto 10px auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#cht_companyPositioning div.svg-container {
+    display: block;
+    height: 600px;
+    margin: auto 1%;
+}
+
+/***** 3rd Layer *****/
+
+/********** Bottom **********/
+#bottom {
+    width: 98%;
+    display: block;
+    border-width: thin;
+    border-style: hidden;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+    margin: 10px auto 30px auto;
+    border-radius: 30px 30px 30px 30px;
+    background-color: rgba(20, 20, 20, 0.7);
+}
