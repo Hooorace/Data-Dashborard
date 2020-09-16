@@ -20,10 +20,13 @@ def cht_globalReview(geoData, mapData):
             marker_opacity = 0.5,
             marker_line_width = 0,
             colorscale = [
-                'rgba(255, 255, 255, 0.7)',
+                'rgba(172, 168, 168, 0.7)',
+                'rgba(217, 217, 217, 0.7)',
+                'rgba(255, 193, 197, 0.7)',
                 'rgba(255, 143, 152, 0.7)',
                 'rgba(254, 88, 100, 0.7)',
                 'rgba(229, 1, 18, 0.7)',
+                'rgba(180, 0, 13, 0.7)',
                 'rgba(114, 0, 9, 0.7)'
                 ],
             colorbar = dict(
