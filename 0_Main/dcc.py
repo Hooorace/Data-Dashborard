@@ -2,12 +2,23 @@
 import dash_core_components as dcc
 import pandas as pd
 
+# product
+def dd_product(data_source):
+
+    product_list = data_source["product_list"]
+
+    dropDown = dcc.Dropdown(
+        id = "product",
+        options = ([{'label': i, 'value': i} for i in product_list]),
+        value = "microwave")
+
+    return dropDown
+
+
 # Year
 def dd_year(data_source):
 
-    db_connection = data_source["db_connection"]
     df_views = data_source["df_views"]
-
     year_list = list(df_views["yr"].unique())
 
     component = dcc.Dropdown(
@@ -21,7 +32,6 @@ def dd_year(data_source):
 # company
 def rs_month(data_source):
 
-    df_views = data_source["df_views"]
     company_list = data_source["company_list"]
 
     rangeSlider = dcc.RangeSlider(
@@ -43,7 +53,6 @@ def rs_month(data_source):
 # Country
 def dd_country(data_source):
 
-    df_views = data_source["df_views"]
     cn_list = data_source["cn_list"]
 
     dropDown = dcc.Dropdown(
@@ -57,7 +66,6 @@ def dd_country(data_source):
 # company
 def dd_company(data_source):
 
-    df_views = data_source["df_views"]
     company_list = data_source["company_list"]
 
     dropDown = dcc.Dropdown(

@@ -22,7 +22,7 @@ from cht_topFiveMonthlyTrend import cht_topFiveMonthlyTrend
 from cht_companyPositioning import cht_companyPositioning
 from testMap import testMap
 
-from dcc import dd_country, dd_year, dd_indicator, dd_company, rs_month
+from dcc import dd_product, dd_country, dd_year, dd_indicator, dd_company, rs_month
 
 
 def layout(app, data_source):
@@ -35,7 +35,7 @@ def layout(app, data_source):
             html.Div([
                 html.Div([
                     html.Div(
-                        # [dd_product(data_source)],
+                        [dd_product(data_source)],
                         className = "menuName"),
                     html.Div(
                         [dd_company(data_source)],

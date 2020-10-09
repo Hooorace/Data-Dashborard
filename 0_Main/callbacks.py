@@ -16,6 +16,7 @@ from cht_topFiveAnnualTrend import cht_topFiveAnnualTrend
 from cht_topFiveMonthlyTrend import cht_topFiveMonthlyTrend
 from cht_companyPositioning import cht_companyPositioning
 
+
 def callbacks(app, data_source):
 
     @app.callback(
@@ -45,19 +46,28 @@ def callbacks(app, data_source):
             ### Company Positioning ###
             Output(component_id = "cht_companyPositioning", component_property = "children")
         ],
-        [Input(component_id = "company", component_property = "value"),
+        [Input(component_id = "product", component_property = "value"),
+        Input(component_id = "company", component_property = "value"),
         Input(component_id = "country", component_property = "value"),
         Input(component_id = "year", component_property = "value"),
         Input(component_id = "month", component_property = "value"),
         Input(component_id = "indicator", component_property = "value")]
     )
-    def update_condition(company, cn, year, month, indicator, data_source = data_source):
+    def update_condition(product, company, cn, year, month, indicator, data_source = data_source):
+
+        original_product = data_source["product"]
+        if original_product != product:
+            update_data.updateData_product(data_source, product)
+            update_views(data_source)
 
         update_data.updateData_company(data_source, company)
         update_data.updateData_cn(data_source, cn)
         update_data.updateData_year(data_source, year)
         update_data.updateData_period(data_source, month)
         update_data.updateData_indicator(data_source, indicator)
+
+        print(data_source["product"])
+        print(data_source["current_view"])
 
         print(data_source["company"])
         print(data_source["country"])
@@ -66,8 +76,6 @@ def callbacks(app, data_source):
         print(data_source["period"])
         print(data_source["indicator"])
         print("\n")
-
-        update_views(data_source)
 
         Volume = tb_volumeData(data_source)["volume"]
         VolShare = tb_volumeData(data_source)["volume_share"]
