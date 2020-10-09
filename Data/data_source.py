@@ -6,7 +6,7 @@ import pandas as pd
 """Primary Data"""
 ### Market Scale
 #### Product
-product = "微波炉"
+product = "microwave"
 #### Continent
 continents = "北美洲"
 #### Subcontinent
@@ -29,6 +29,9 @@ end_month = 12
 
 indicator = "vol"
 
+#Product Data List
+product_list = ['microwave', 'refridgerator']
+current_view = "data_source"
 
 """"Period"""
 period = []
@@ -64,3 +67,6 @@ with open(path_geoCN) as f_geoCN:
 
 data_source["indicator"] = indicator
 data_source["bottom_price"] = bottom_price
+
+data_source["product_list"] = product_list
+data_source["current_view"] = current_view

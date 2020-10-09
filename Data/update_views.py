@@ -5,6 +5,7 @@ def update_views(data_source):
 
     # Database Connection
     db_connection = data_source["db_connection"]
+    current_view = data_source["current_view"]
 
     df_views = pd.read_sql(
     """
@@ -16,10 +17,10 @@ def update_views(data_source):
         sum(export_value) as val,
         company_abbr as company
     From
-        data_source
+        {current_view}
     Group By
         yr, month, cn, company;
-    """, con = db_connection)
+    """.format(current_view = current_view), con = db_connection)
 
     data_source["df_views"] = df_views
 

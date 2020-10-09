@@ -1,6 +1,19 @@
 from data_source import data_source
 
 
+def updateData_product(data_source, product):
+
+    product_views = {
+        'microwave': 'data_source',
+        'refridgerator': 'data_source_fridge'
+    }
+
+    current_view = product_views[product]
+
+    data_source["product"] = product
+    data_source["current_view"] = current_view
+
+
 def updateData_year(data_source, year):
     year = int(year.replace("年", ""))
     last_year = year - 1
