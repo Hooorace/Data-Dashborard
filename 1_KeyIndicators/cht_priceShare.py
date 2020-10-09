@@ -8,14 +8,9 @@ from sqlalchemy import text
 
 def cht_priceShare(data_source):
 
-    db_connection = data_source["db_connection"]
-
     df_views = data_source["df_views"]
 
     period = data_source["period"]
-    product = data_source["product"]
-    continents = data_source["continents"]
-    subcontinents = data_source["subcontinents"]
     country = data_source["country"]
     company = data_source["company"]
 
