@@ -15,6 +15,8 @@ import dash
 
 ## Components of the Application
 from layout import layout
+# from layout_export import layout_export
+
 from callbacks import callbacks
 
 ## Import data source
@@ -31,6 +33,7 @@ update_views(data_source)
 
 ## Create a dash application
 app = dash.Dash(__name__)
+app.config.suppress_callback_exceptions = True
 
 ## Callback of the Application
 callbacks(app, data_source)
