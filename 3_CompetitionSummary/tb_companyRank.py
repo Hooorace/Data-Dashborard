@@ -103,7 +103,7 @@ def tb_companyRank(data_source):
                 'if': {
                     'filter_query': '{Company} contains "格兰仕"'},
                 'color': 'white',
-                'backgroundColor': 'rgba(114, 0, 9, 0.6)',
+                'backgroundColor': 'rgba(180, 0, 13, 0.6)',
                 'fontWeight': 'bold',
             },
         ],
