@@ -1,3 +1,102 @@
+/************* Index Page *************/
+#index {
+    background-image: url("index_background_small.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 1000px;
+}
+
+#header_index {
+    display: block;
+    height: 250px;
+    line-height: 250px;
+    border-style: solid;
+    border-color: yellow;
+    border: hidden;
+    font-size: 100px;
+}
+
+#logo_index {
+    display: block;
+    text-align: center;
+    font-family: "Arial Black";
+    text-shadow: 0 0 20px rgba(217, 217, 217, 0.7);
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: red;
+    border: hidden;
+    margin: auto;
+}
+
+#body_index {
+    display: inline-flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: white;
+    border: hidden;
+    width: 70%;
+    height: 400px;
+    margin: auto 15% auto 15%;
+}
+
+.menuIndex {
+    font-family: "Arial Black";
+    text-align: center;
+    display: inline-block;
+    border-style: solid;
+    border-color: green;
+    border: hidden;
+    width: 30%;
+    margin: auto;
+    height: 50px;
+    line-height: 50px;
+    background: linear-gradient(
+        45deg,
+        rgba(107, 229, 133, 0.8),
+        rgba(221, 62, 84, 0.8));
+    box-shadow: 0 0 10px rgba(168, 168, 168, 0.7);
+    border-radius: 30px;
+}
+
+.menuIndex a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.menuIndex a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.menuIndex a:active {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+#footnote {
+    height: 100px;
+    line-height: 100px;
+    border-style: solid;
+    border-color: pink;
+    border: hidden;
+    color: rgba(210, 210, 210, 0.9);
+}
+
+#bottom_index {
+    font-family: "Arial Black";
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    display: block;
+    border-style: solid;
+    border-color: white;
+    border: hidden;
+    vertical-align: middle;
+}
+
+
 /********** HTML **********/
 body {
     background-color: rgba(41, 41, 41, 1);
@@ -7,7 +106,7 @@ body {
 
 /********** Header **********/
 Header {
-    height: 260px;
+    height: 370px;
     display: block;
     border-style: hidden;
     border-color: green;
@@ -15,13 +114,43 @@ Header {
 
 #headerBackground {
     display: block;
-    height: 120px;
+    height: 200px;
     color: rgb(255, 255, 255);
-    background-color: rgba(20, 20, 20, 0.7);
     border-style: hidden;
     border-color: white;
     line-height: 120px;
     border-radius: 30px 30px 30px 30px;
+    background-image: url("export_banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 20px;
+}
+
+#home_export {
+    border-color: red;
+    border-style: hidden;
+    height: 40px;
+    line-height: 30px;
+}
+
+#home_export a {
+    display: block;
+    font-family: "Arial Black";
+    width: 10%;
+    color: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(
+        45deg,
+        rgba(107, 229, 133, 0.8),
+        rgba(221, 62, 84, 0.8));
+    box-shadow: 0 0 10px rgba(168, 168, 168, 0.7);
+    border-style: hidden;
+    border-color: green;
+    border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
 }
 
 #logo {
@@ -30,6 +159,7 @@ Header {
     font-family: "Arial Black";
     vertical-align: middle;
     color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgba(217, 217, 217, 0.7);
     margin-bottom: 0;
     border-style: hidden;
     border-color: red;
@@ -45,7 +175,8 @@ Header {
 
 #Menu_dd {
     font-family: "Arial Black";
-    display: block;
+    display: flex;
+    justify-content: space-between;
     height: 35px;
     border-radius: 15px 15px 15px 15px;
     vertical-align: middle;
@@ -54,6 +185,7 @@ Header {
     color: rgba(255, 255, 255, 0.8);
     margin: 10px auto 10px auto;
     border-style: hidden;
+    border-color: white;
 }
 
 .menuName {
@@ -62,7 +194,10 @@ Header {
     border-radius: 15px 15px 15px 15px;
 }
 
-#company .Select-control, #country .Select-control, #year .Select-control
+#product .Select-control,
+#company .Select-control,
+#country .Select-control,
+#year .Select-control
 {
     width: 95%;
     height: 15px;
@@ -73,7 +208,7 @@ Header {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
     border-style: hidden;
-    border-color: green;
+    border-color: white;
 }
 
 #Menu_rs {
@@ -158,6 +293,12 @@ H2 {
     margin: 10px auto 10px auto;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+#product {
+    color: rgba(112, 112, 112, 0.4);
+    font-size: 10px;
+    font-family: "Arial Black";
 }
 
 #country {
