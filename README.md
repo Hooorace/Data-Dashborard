@@ -6,11 +6,15 @@ An interactive dashboard that is based on *Plotly*.
 - layout.py
 - dcc.py
 - callbacks.py
+- layout_index.py
+- layout_export.py
+- layout_products.py
 
-## ⏲Key Indicators
+## 🚢Export Data
+### ⏲Key Indicators
+### 🗺Global Review
+### ⚔Competition Summary
 
-## 🗺Global Review
-
-## ⚔Competition Summary
+## 🎁Products Data
 
 ## 🔢Data
